@@ -22,4 +22,4 @@ You may also need to download the [SUN360 dataset](http://vision.princeton.edu/p
 The network is defined in `ldr2hdr_net.py`. Two pre-trained models are also provided in the `model_*` folder.
 
 ## Requirements
-Our model is trained with [TensorFlow](https://www.tensorflow.org/); and [OpenEXR](http://www.openexr.com/) is used to write HDR images.
+Our model is trained with [TensorFlow](https://www.tensorflow.org/).

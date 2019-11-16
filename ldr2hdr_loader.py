@@ -28,7 +28,7 @@ class LDR2HDR_Loader():
         if self.imsize is not None:
             feed_dict[self.imsize] = input_ims.shape[1:3]
         pred, fc = self.sess.run([self.output, self.fc], feed_dict)
-        fc = np.squeeze(fc, axis=[1, 2])
+        fc = np.squeeze(fc, axis=1) # previously [1,2]
         return pred, fc
 
     def get_ops(self, name=''):
